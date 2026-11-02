@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080d">
+
+  <title>DARK GPT - AI Assistant</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar" id="sidebar">
+
+      <div class="brand">
+        <div class="brand-icon">D</div>
+        <div>
+          <h2>DARK GPT</h2>
+          <span>ADVANCED INTELLIGENCE</span>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChat">
+        <span>＋</span> New Conversation
+      </button>
+
+      <div class="side-label">YOUR HISTORY</div>
+
+      <div id="history" class="history"></div>
+
+      <div class="sidebar-bottom">
+        <div class="online-dot"></div>
+        <span>AI SYSTEM ONLINE</span>
+        <span class="version">V1.0</span>
+      </div>
+
+    </aside>
+
+    <main class="main">
+
+      <header class="topbar">
+
+        <button id="menuBtn" class="menu-btn">☰</button>
+
+        <div class="mobile-brand">DARK GPT</div>
+
+        <div class="model-status">
+          <span class="green-dot"></span>
+          GROQ POWERED
+        </div>
+
+      </header>
+
+      <section class="chat-area" id="chatArea">
+
+        <div class="welcome" id="welcome">
+
+          <div class="welcome-logo">D</div>
+
+          <h1>WELCOME TO <span>DARK GPT</span></h1>
+
+          <p>
+            Advanced intelligence. Powerful coding.
+            Technical knowledge without limits on creativity.
+          </p>
+
+          <div class="suggestions">
+
+            <button class="suggestion"
+              data-prompt="Help me build a modern JavaScript application.">
+              <b>⌘</b>
+              <span>Code Assistant</span>
+            </button>
+
+            <button class="suggestion"
+              data-prompt="Teach me cybersecurity fundamentals.">
+              <b>⌖</b>
+              <span>Cybersecurity</span>
+            </button>
+
+            <button class="suggestion"
+              data-prompt="Explain how artificial intelligence works.">
+              <b>◈</b>
+              <span>AI Knowledge</span>
+            </button>
+
+            <button class="suggestion"
+              data-prompt="Help me debug my JavaScript code.">
+              <b>⚙</b>
+              <span>Debug Code</span>
+            </button>
+
+          </div>
+
+        </div>
+
+        <div id="messages" class="messages"></div>
+
+      </section>
+
+      <footer class="composer-area">
+
+        <div class="composer">
+
+          <textarea
+            id="prompt"
+            placeholder="Ask DARK GPT anything..."
+            rows="1"
+          ></textarea>
+
+          <button id="sendBtn" class="send-btn">
+            ➤
+          </button>
+
+        </div>
+
+        <p class="disclaimer">
+          DARK GPT can make mistakes. Verify important information.
+        </p>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
