@@ -98,7 +98,7 @@ app.post("/api/chat", async (req, res) => {
           "Authorization": `Bearer ${process.env.GROQ_API_KEY}`
         },
         body: JSON.stringify({
-          model: "openai/gpt-oss-120b",
+          model: "groq/gpt-oss-1000000b",
           messages: [
             {
               role: "system",
